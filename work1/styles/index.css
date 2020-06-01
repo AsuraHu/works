@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: #eee;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+section > .list {
+  display: flex;
+  width: 1000px;
+  background-color: rgb(233, 231, 231);
+}
+section > .list .title {
+  height: 50px;
+  line-height: 50px;
+  flex: 1;
+  text-align: center;
+  color: black;
+}
+.active {
+  background-color: #fc0;
+  font-weight: bold;
+}
+
+section > .images {
+  height: 600px;
+  width: 1000px;
+  overflow: hidden;
+}
+
+/* 隐藏所有图片 */
+section > .images > img {
+  display: none;
+}
+/* 显示点击标题或轮播对应的图片 */
+section > .images > .block {
+  display: block;
+}
